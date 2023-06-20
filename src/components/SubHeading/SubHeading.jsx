@@ -1,5 +1,5 @@
 import React from 'react';
-
+import PropTypes from 'prop-types';
 import { images } from '../../constants';
 
 const SubHeading = ({ title }) => (
@@ -8,5 +8,9 @@ const SubHeading = ({ title }) => (
     <img src={images.spoon} alt="spoon_image" className="spoon__img" />
   </div>
 );
+
+SubHeading.propTypes = {
+  title: PropTypes.string.isRequired,
+};
 
 export default SubHeading;

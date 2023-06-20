@@ -20,7 +20,7 @@ const Footer = () => (
 
       <div className="app__footer-links_logo">
         <img src={images.gericht} alt="footer_logo" />
-        <p className="p__opensans">&quot;Savor the Exquisite Flavors of Indonesia's Culinary Heritage.&quot;</p>
+        <p className="p__opensans">&ldquo;Savor the Exquisite Flavors of Indonesia&rsquo;s Culinary Heritage.&rdquo;</p>
         <img src={images.spoon} className="spoon__img" style={{ marginTop: 15 }} />
         <div className="app__footer-links_icons">
           <FiFacebook />
@@ -41,7 +41,6 @@ const Footer = () => (
     <div className="footer__copyright">
       <p className="p__opensans">2023 Selera Nusantara. All Rights reserved.</p>
     </div>
-
   </div>
 );
 

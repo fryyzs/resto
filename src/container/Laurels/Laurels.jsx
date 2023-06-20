@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import { SubHeading } from '../../components';
 import { images, data } from '../../constants';
@@ -13,6 +14,14 @@ const AwardCard = ({ award: { imgUrl, title, subtitle } }) => (
     </div>
   </div>
 );
+
+AwardCard.propTypes = {
+  award: PropTypes.shape({
+    imgUrl: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    subtitle: PropTypes.string.isRequired,
+  }).isRequired,
+};
 
 const Laurels = () => (
   <div className="app__bg app__wrapper section__padding" id="awards">
